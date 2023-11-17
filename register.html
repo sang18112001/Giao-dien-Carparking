@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký thông tin cá nhân</title>
+  <style>
+    body {
+    background: url(/assets/images/Backgroud.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #registration-form {
+    background: linear-gradient(to right, #9FB6CD, #B5B5B5);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    box-sizing: border-box;
+  }
+
+  #registration-form h2 {
+    text-align: center;
+    color: #fff;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  .upload-btn-wrapper .upload-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #B5B5B5;
+    color: #fff;
+  }
+
+  .save-btn {
+    width: 100%;
+    background-color: #9FB6CD;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .save-btn:hover {
+    background-color: #6C7B8B;
+  }
+  </style>
+</head>
+<body>
+
+<div id="registration-form">
+  <h2>Đăng ký thông tin cá nhân</h2>
+  <form id="registration-form">
+    <div class="form-group">
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Ngày sinh:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Quê quán:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+
+    <div class="form-group">
+      <label for="permanentAddress">Thường trú:</label>
+      <input type="text" id="permanentAddress" name="permanentAddress" required>
+    </div>
+
+    <div class="form-group">
+      <label for="idNumber">Số chứng minh thư:</label>
+      <input type="text" id="idNumber" name="idNumber" required>
+    </div>
+
+    <div class="form-group">
+      <label for="faceImage">Ảnh khuôn mặt:</label>
+      <div class="upload-btn-wrapper">
+        <button class="btn">Chọn ảnh</button>
+        <input type="file" name="faceImage" id="faceImage" accept="image/*" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="idImage">Ảnh chứng minh thư:</label>
+      <div class="upload-btn-wrapper">
+        <button class="btn">Chọn ảnh</button>
+        <input type="file" name="idImage" id="idImage" accept="image/*" required>
+      </div>
+    </div>
+
+    <button type="button" class="save-btn" onclick="saveInfo()">Lưu thông tin</button>
+  </form>
+</div>
+
+<script>
+  function saveInfo() {
+    // Lấy giá trị từ các trường input
+    var name = document.getElementById('name').value;
+    var dob = document.getElementById('dob').value;
+    var address = document.getElementById('address').value;
+    var permanentAddress = document.getElementById('permanentAddress').value;
+    var idNumber = document.getElementById('idNumber').value;
+
+    // Có thể thực hiện thêm xử lý lưu thông tin vào database ở đây
+    console.log('Thông tin đã lưu:');
+    console.log('Họ và tên:', name);
+    console.log('Ngày sinh:', dob);
+    console.log('Quê quán:', address);
+    console.log('Thường trú:', permanentAddress);
+    console.log('Số chứng minh thư:', idNumber);
+
+    // Đặt thêm logic lưu vào database tại đây
+  }
+</script>
+
+</body>
+</html>

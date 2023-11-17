@@ -1,0 +1,714 @@
+/**************** Import Font-Family ****************/
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Black.eot");
+  src: url("../fonts/Inter-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Black.woff2") format("woff2"),
+    url("../fonts/Inter-Black.woff") format("woff"),
+    url("../fonts/Inter-Black.ttf") format("truetype"),
+    url("../fonts/Inter-Black.svg#Inter-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-ExtraLight.eot");
+  src: url("../fonts/Inter-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Inter-ExtraLight.woff") format("woff"),
+    url("../fonts/Inter-ExtraLight.ttf") format("truetype"),
+    url("../fonts/Inter-ExtraLight.svg#Inter-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.eot");
+  src: url("../fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff"),
+    url("../fonts/Inter-Bold.ttf") format("truetype"),
+    url("../fonts/Inter-Bold.svg#Inter-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-ExtraBold.eot");
+  src: url("../fonts/Inter-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Inter-ExtraBold.woff") format("woff"),
+    url("../fonts/Inter-ExtraBold.ttf") format("truetype"),
+    url("../fonts/Inter-ExtraBold.svg#Inter-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot");
+  src: url("../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium.woff") format("woff"),
+    url("../fonts/Inter-Medium.ttf") format("truetype"),
+    url("../fonts/Inter-Medium.svg#Inter-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Light.eot");
+  src: url("../fonts/Inter-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Light.woff2") format("woff2"),
+    url("../fonts/Inter-Light.woff") format("woff"),
+    url("../fonts/Inter-Light.ttf") format("truetype"),
+    url("../fonts/Inter-Light.svg#Inter-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot");
+  src: url("../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff"),
+    url("../fonts/Inter-Regular.ttf") format("truetype"),
+    url("../fonts/Inter-Regular.svg#Inter-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Thin.eot");
+  src: url("../fonts/Inter-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Thin.woff2") format("woff2"),
+    url("../fonts/Inter-Thin.woff") format("woff"),
+    url("../fonts/Inter-Thin.ttf") format("truetype"),
+    url("../fonts/Inter-Thin.svg#Inter-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.eot");
+  src: url("../fonts/Inter-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff"),
+    url("../fonts/Inter-SemiBold.ttf") format("truetype"),
+    url("../fonts/Inter-SemiBold.svg#Inter-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/**************** Reset Browser *****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+.main-website {
+  display: flex;
+  gap: 30px;
+}
+.main-box {
+  width: 70%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-2 {
+  width: calc(100% / 2);
+}
+.col-3 {
+  width: calc(100% / 3);
+}
+.col-4 {
+  width: calc(100% / 4);
+}
+.col-5 {
+  width: calc(100% / 5);
+}
+.col-6 {
+  width: calc(100% / 6);
+}
+.col-8 {
+  width: calc(100% / 8);
+}
+.col-9 {
+  width: calc(100% / 9);
+}
+.col-10 {
+  width: calc(100% / 10);
+}
+.hidden {
+  display: none !important;
+}
+.active {
+  display: block !important;
+}
+.flex {
+  display: flex !important;
+}
+/**************** Header Main *****************/
+.header-main {
+  box-shadow: 0px 4px 30px 0px rgba(28, 28, 28, 0.1);
+  border-bottom: 1px solid #a0a0a0
+}
+.wrap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.wrap-header .logo img {
+  width: 137px;
+  object-fit: cover;
+}
+.wrap-header .user-control {
+  display: flex;
+}
+.user-control .menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrap-header .user-control li {
+  list-style: none;
+  margin-left: 20px;
+}
+.wrap-header .user-control li:nth-child(1) button {
+  border-radius: 22px;
+  background: #f4f7f8;
+  padding: 8px 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.wrap-header .user-control li:nth-child(1) button img {
+  margin-right: 7px;
+}
+.wrap-header .user-control li:nth-child(2) button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ededed;
+  cursor: pointer;
+}
+.wrap-header .user-control li:nth-child(3) .menu-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/**************** Main  ****************/
+.wrap-main {
+  padding-top: 20px;
+}
+/* Main-Top */
+.main-top {
+  display: flex;
+}
+.main-top .smt-general {
+  width: 15%;
+}
+.main-top label {
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 100% */
+  color: rgba(48, 47, 47, 1);
+  margin-bottom: 15px;
+}
+.main-top input {
+  border: 1px solid rgba(151, 151, 151, 1);
+  padding: 0px 12px;
+  height: 35px;
+  border-radius: 4px;
+  width: 85%;
+}
+.main-top input:focus {
+  outline: none;
+}
+
+.main-top .smt-operations {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.smt-operations .info-operations {
+  width: calc(100% / 3);
+  padding-right: 25px;
+}
+.smt-operations .info-operations:last-child {
+  padding-right: 30px;
+}
+.smt-operations .info-operations ul {
+  display: flex;
+}
+.smt-operations .info-operations ul li {
+  list-style: none;
+  position: relative;
+  margin-right: 10px;
+}
+.smt-operations .info-operations ul li:last-child {
+  margin-right: 0;
+}
+.smt-operations .info-operations ul li label {
+  color: #02668f;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 16.8px */
+  position: absolute;
+  background-color: #fff;
+  top: -10px;
+  left: 8px;
+}
+.smt-operations .info-operations ul li input {
+  width: 100%;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 21px */
+  color: rgba(15, 15, 15, 1);
+}
+
+.main-top .smt-amount {
+  width: 10%;
+}
+.main-top .smt-amount input {
+  width: 100%;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  color: rgba(255, 0, 0, 1);
+}
+/* Main-Center */
+.main-center label {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+.main-center .col:nth-child(1) label,
+.main-center .col:nth-child(2) label,
+.main-center .col:nth-child(3) label,
+.main-center .col:nth-child(4) label {
+  background: #02668f;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+/* .main-center .col:nth-child(3) label,
+.main-center .col:nth-child(4) label {
+  background-color: rgba(254, 229, 0, 1);
+  color: #000;
+} */
+.main-center .col:nth-child(5) label,
+.main-center .col:nth-child(6) label {
+  background-color: rgba(0, 70, 250, 1);
+  color: #fff;
+}
+.main-center .col:nth-child(7) label,
+.main-center .col:nth-child(8) label {
+  background-color: rgba(5, 229, 0, 1);
+  color: #000;
+}
+.main-center .col:nth-child(9) label,
+.main-center .col:nth-child(10) label {
+  background: linear-gradient(to right, #778899, #9c9c9c);
+  color: #fff;
+}
+.content {
+  width: 100%;
+  height: 230px;
+  background-color: violet;
+  margin-bottom: 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* Main Bottom */
+.main-bottom .row {
+  margin-bottom: 20px;
+}
+.pedestrian-info {
+  border-radius: 4px;
+  border: 1px solid #c8c8c8;
+  background: #fff;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pedestrian-info .box-img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 13px;
+}
+.pedestrian-info .box-img {
+  width: calc(100% / 3);
+  text-align: center;
+}
+.pedestrian-info .box-img h4 {
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 19.5px */
+  text-align: center;
+}
+.pedestrian-info .box-content {
+  width: calc(100% - calc(100% / 3));
+}
+.info-user {
+  padding: 20px;
+}
+.info-user h3 {
+  color: #02668f;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 120% */
+}
+.info-user .detail {
+  margin-top: 10px;
+}
+.info-user .detail p {
+  margin-bottom: 5px;
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.info-user .detail p span {
+  font-weight: 600;
+}
+.info-user .detail p:last-child {
+  margin-bottom: 0;
+}
+.info-user .detail .nationality {
+  display: flex;
+}
+.info-user .detail .nationality p {
+  margin-right: 8px;
+}
+.info-user .detail .nationality p:last-child {
+  margin-left: 0;
+}
+.main-bottom label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  padding: 12px 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.main-bottom .col-10:nth-child(2) label,
+.main-bottom .col-10:nth-child(3) label {
+  background-color: rgba(254, 229, 0, 1);
+  color: rgba(0, 0, 0, 1);
+}
+.main-bottom .col-10:nth-child(4) label,
+.main-bottom .col-10:nth-child(5) label {
+  background-color: rgba(0, 70, 250, 1);
+  color: #fff;
+}
+.main-bottom .col-10:nth-child(6) label,
+.main-bottom .col-10:nth-child(7) label {
+  background-color: rgba(5, 229, 0, 1);
+  color: #000;
+}
+.main-bottom .col-10:nth-child(8) label,
+.main-bottom .col-10:nth-child(9) label {
+  background: linear-gradient(to right, #778899, #9c9c9c);
+  color: #fff;
+}
+.upload-citizen {
+  border-radius: 4px;
+  border: 1px solid #c8c8c8;
+  background: #fff;
+  padding: 20px;
+}
+.upload-citizen .img {
+  width: 100%;
+  height: 250px;
+  background-color: pink;
+}
+.upload-citizen ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.upload-citizen ul li {
+  list-style: none;
+  width: calc(48%);
+}
+.upload-citizen ul li button {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  background: #02668f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.upload-citizen ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.info-car {
+  background: #fff;
+  display: flex;
+}
+.info-car .box-client {
+  width: 20%;
+  text-align: center;
+}
+.info-car .box-client img {
+  width: 100%;
+  object-fit: cover;
+}
+.info-car .box-client h4 {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 19.5px */
+  color: #000;
+  margin-top: 10px;
+}
+.info-car {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #a0a0a0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: end;
+}
+.info-car .box-content {
+  display: flex;
+}
+/* .info-car .box-content .des-client {
+  width: calc(100% - 145px);
+} */
+.info-car ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.info-car ul li {
+  list-style: none;
+  position: relative;
+  margin-right: 10px;
+  text-align: center;
+}
+.info-car ul li:last-child {
+  margin-right: 0;
+}
+.info-car ul li input {
+  height: 40px;
+  padding: 0px 12px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+}
+.info-car ul li label {
+  color: #02668f;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  position: absolute;
+  background-color: #fff;
+  top: -12px;
+  left: 8px;
+  padding: 0;
+}
+
+.info-car .infor-box {
+  display: flex;
+}
+.info-car .infor-box label {
+  width: 146px;
+  height: 40px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #02668f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+.info-car .infor-box input {
+  border: 1px solid rgba(151, 151, 151, 1);
+  height: 40px;
+  padding: 0px 12px;
+  width: 100%;
+}
+
+.info-car .popup-button {
+  background-color: #02668f;
+  width: 80px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Popup info */
+.info-car-popup {
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #a0a0a0;
+  overflow: hidden;
+}
+
+.popup-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-active {
+  border-bottom: none !important;
+  background-color: white !important;
+}
+.popup-btn button {
+  padding: 10px 20px;
+  background-color: white;
+  flex: 1;
+  border: none;
+  background-color: #c8c8c8;
+}
+.popup-btn button:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.popup-box {
+  width: 100%;
+  height: 332px;
+  padding: 15px 30px;
+  border: none;
+  display: none;
+}
+
+.popup-box h3 {
+  text-align: center;
+}
+.popup-box .main-popup {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+.popup-box input {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.faceId h4 {
+  text-align: center;
+  background-color: #02668f;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.faceId > div {
+  width: 150px;
+  height: 120px;
+  background-color: violet;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* side bar */
+.web-right {
+  width: 30%;
+}
+
+.side-bar {
+  border: 1px solid rgba(151, 151, 151, 1);
+  padding: 10px 30px;
+  height: 430px;
+  border-radius: 10px;
+}
+.side-bar h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.side-bar li {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-self: center;
+  margin-bottom: 15px;
+}
+.side-bar li input {
+  padding: 10px;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+}

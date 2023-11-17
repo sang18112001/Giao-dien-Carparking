@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản trị làn xe Car Parking</title>
+    <!-- import admin-styles css -->
+    <link rel="stylesheet" href="./assets/css/admin-styles.css" />
+  </head>
+  <body>
+    <!-- Header Main ./Start -->
+    <div class="header-main">
+      <div class="container">
+        <div class="wrap-header">
+          <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo web pacrking" />
+          </div>
+          <ul class="user-control">
+            <ul class="menu">
+              <li>Tài khoản</li>
+              <li>Trạng thái thiết bị</li>
+              <li>Thời gian</li>
+              <li>Cài đặt</li>
+            </ul>
+            <li>
+              <button>
+                <img
+                  src="./assets/images/notification.svg"
+                  alt="Notification"
+                />
+              </button>
+            </li>
+            <li>
+              <div class="menu-user">
+                <img src="./assets/images/avata.png" alt="Ảnh đại diện" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Main ./Start -->
+    <div class="wrap-main">
+      <div class="container">
+        <!-- Main-Center -->
+        <div class="main-website">
+          <div class="main-box">
+            <div class="main-center">
+              <div class="row">
+                <!-- Làn 1 -->
+                <div class="col col-3">
+                  <div class="col-top">
+                    <label for="tc-lan-1">Toàn cảnh làn 1</label>
+                    <div class="content"></div>
+                  </div>
+                  <div class="col-bottom">
+                    <label for="cbs-lan-1">Chụp biển số làn 1</label>
+                    <div class="content"></div>
+                  </div>
+                </div>
+                <!-- Làn 2 -->
+                <div class="col col-3">
+                  <div class="col-top">
+                    <label for="tc-lan-2">Toàn cảnh làn 2</label>
+                    <div class="content"></div>
+                  </div>
+                  <div class="col-bottom">
+                    <label for="cbs-lan-2">Chụp biển số làn 2</label>
+                    <div class="content"></div>
+                  </div>
+                </div>
+                <!-- Làn 3 -->
+                <div class="col col-3">
+                  <div class="col-top">
+                    <label for="tc-lan-3">Toàn cảnh làn 3</label>
+                    <div class="content"></div>
+                  </div>
+                  <div class="col-bottom">
+                    <label for="cbs-lan-3">Chụp biển số làn 3</label>
+                    <div class="content"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Main-Bottom -->
+            <div class="c main-bottom">
+              <div class="row">
+                <div class="col col-3" id="car-1">
+                  <div class="info-car">
+                    <ul>
+                      <li>
+                        <label>Ngày Vào: </label>
+                        <input type="text" value="01/09/2023" />
+                      </li>
+                      <li>
+                        <label>Ngày Ra</label>
+                        <input type="text" value="02/09/2023" />
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <label>Giờ Vào: </label>
+                        <input type="text" value="20:03:01" />
+                      </li>
+                      <li>
+                        <label>Giờ Ra</label>
+                        <input type="text" value="22:03:01" />
+                      </li>
+                    </ul>
+                    <div class="infor-box">
+                      <label class="title-lane">LOẠI XE</label>
+                      <input type="text" value="Xe máy" />
+                    </div>
+                    <div class="infor-box">
+                      <label class="title-lane">BIỂN SỐ XE</label>
+                      <input type="text" value="16A-1234" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-3" id="car-2">
+                  <div class="info-car">
+                    <ul>
+                      <li>
+                        <label>Ngày Vào: </label>
+                        <input type="text" value="01/09/2023" />
+                      </li>
+                      <li>
+                        <label>Ngày Ra</label>
+                        <input type="text" value="02/09/2023" />
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <label>Giờ Vào: </label>
+                        <input type="text" value="20:03:01" />
+                      </li>
+                      <li>
+                        <label>Giờ Ra</label>
+                        <input type="text" value="22:03:01" />
+                      </li>
+                    </ul>
+                    <div class="infor-box">
+                      <label class="title-lane">LOẠI XE</label>
+                      <input type="text" value="Xe máy" />
+                    </div>
+                    <div class="infor-box">
+                      <label class="title-lane">BIỂN SỐ XE</label>
+                      <input type="text" value="16A-1234" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-3" id="car-3">
+                  <div class="info-car">
+                    <ul>
+                      <li>
+                        <label>Ngày Vào: </label>
+                        <input type="text" value="01/09/2023" />
+                      </li>
+                      <li>
+                        <label>Ngày Ra</label>
+                        <input type="text" value="02/09/2023" />
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <label>Giờ Vào: </label>
+                        <input type="text" value="20:03:01" />
+                      </li>
+                      <li>
+                        <label>Giờ Ra</label>
+                        <input type="text" value="22:03:01" />
+                      </li>
+                    </ul>
+                    <div class="infor-box">
+                      <label class="title-lane">LOẠI XE</label>
+                      <input type="text" value="Xe máy" />
+                    </div>
+                    <div class="infor-box">
+                      <label class="title-lane">BIỂN SỐ XE</label>
+                      <input type="text" value="16A-1234" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="web-right">
+            <div class="side-bar">
+              <h3>Thống kê hiện trạng</h3>
+              <ul class="main">
+                <li class="field">
+                  <h4>Tổng số:</h4>
+                  <input type="text" value="10" />
+                </li>
+                <li class="field">
+                  <h4>Xe máy:</h4>
+                  <input type="text" value="10" />
+                </li>
+                <li class="field">
+                  <h4>Ô tô:</h4>
+                  <input type="text" value="10" />
+                </li>
+                <li class="field">
+                  <h4>Bãi trống:</h4>
+                  <input type="text" value="10" />
+                </li>
+                <li class="field">
+                  <h4>Khách vào:</h4>
+                  <input type="text" value="10" />
+                </li>
+                <li class="field">
+                  <h4>Khách ra:</h4>
+                  <input type="text" value="10" />
+                </li>
+                <li class="field">
+                  <h4>Còn lại:</h4>
+                  <input type="text" value="10" />
+                </li>
+                <li class="field">
+                  <h4>Khách thầu đăng ký trong ngày:</h4>
+                  <input type="text" value="10" />
+                </li>
+              </ul>
+            </div>
+            <div class="info-car-popup">
+              <div class="popup-btn">
+                <button class="popup-active">Làn 1</button>
+                <button>Làn 2</button>
+                <button>Làn 3</button>
+              </div>
+              <div class="popup-box active">
+                <h3>Cửa sổ nhập thông tin khác hàng cho làn 1</h3>
+                <div class="main-popup">
+                  <div class="input-popup">
+                    <input type="text" placeholder="Thông in CCCD" />
+                    <input type="text" placeholder="Giờ vào" />
+                    <input type="text" placeholder="Giờ ra" />
+                    <input type="text" placeholder="Công việc" />
+                    <input type="text" placeholder="Người liên hệ" />
+                    <input type="text" placeholder="Số thẻ khách" />
+                  </div>
+                  <div class="faceId">
+                    <h4>FaceID</h4>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-box">
+                <h3>Cửa sổ nhập thông tin khác hàng cho làn 2</h3>
+                <div class="main-popup">
+                  <div class="input-popup">
+                    <input type="text" placeholder="Thông in CCCD" />
+                    <input type="text" placeholder="Giờ vào" />
+                    <input type="text" placeholder="Giờ ra" />
+                    <input type="text" placeholder="Công việc" />
+                    <input type="text" placeholder="Người liên hệ" />
+                    <input type="text" placeholder="Số thẻ khách" />
+                  </div>
+                  <div class="faceId">
+                    <h4>FaceID</h4>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-box">
+                <h3>Cửa sổ nhập thông tin khác hàng cho làn 3</h3>
+                <div class="main-popup">
+                  <div class="input-popup">
+                    <input type="text" placeholder="Thông in CCCD" />
+                    <input type="text" placeholder="Giờ vào" />
+                    <input type="text" placeholder="Giờ ra" />
+                    <input type="text" placeholder="Công việc" />
+                    <input type="text" placeholder="Người liên hệ" />
+                    <input type="text" placeholder="Số thẻ khách" />
+                  </div>
+                  <div class="faceId">
+                    <h4>FaceID</h4>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script js -->
+    <script src="./assets/js/admin.js"></script>
+  </body>
+</html>
