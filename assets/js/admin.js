@@ -1,14 +1,3 @@
-const PopUpCarInfo = () => {
-  const allBoxes = document.querySelectorAll(".main-bottom .col");
-  Array.from(allBoxes).forEach((box) => {
-    const popupButton = box.querySelector(".popup-button");
-    const popupBox = box.querySelector(".info-car-popup");
-    popupButton.addEventListener("click", () =>
-      popupBox.classList.toggle("hidden")
-    );
-  });
-};
-
 const PopUpCar = () => {
   const buttons = document.querySelectorAll(".popup-btn button");
   const boxes = document.querySelectorAll(".popup-box");
@@ -28,3 +17,22 @@ const PopUpCar = () => {
 };
 
 PopUpCar();
+
+const SideBar = () => {
+  const buttons = document.querySelectorAll(".side-bar-btn button");
+  const mainbox = document.querySelectorAll(".side-bar-box");
+  buttons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((btn) => {
+        btn.classList.remove("side-bar-active");
+      });
+      mainbox.forEach((box) => {
+        box.classList.remove("flex");
+      });
+      btn.classList.add("side-bar-active");
+      mainbox[index].classList.add("flex");
+    });
+  });
+};
+
+SideBar();
